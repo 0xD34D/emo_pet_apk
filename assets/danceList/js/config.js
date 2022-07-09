@@ -1,0 +1,1 @@
+window.danceConfig={play(l){window.TellNative.play(l)},stop(l){window.TellNative.stop(l)},later(){window.TellNative.later()}};

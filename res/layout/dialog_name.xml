@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/custom_dialog_layout_design_user_input" android:background="@drawable/dialog_bg_rename" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+        <TextView android:textColor="@color/text_color_white" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rename" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="150.0dip" android:layout_height="25.0dip" android:layout_marginTop="10.0dip">
+        <EditText android:textSize="12.0sp" android:textColor="#ffbf85cc" android:id="@id/dialog_rename" android:background="@drawable/dialog_bg_inputbox" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:inputType="text" android:privateImeOptions="actiondone" android:windowSoftInputMode="adjustPan" android:imeOptions="flagNoExtractUi|flagNoFullscreen" android:paddingStart="8.0dip" android:paddingEnd="25.0dip" />
+        <RelativeLayout android:id="@id/dialog_remove" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageButton android:id="@id/dialog_recog_clear_inner" android:background="@drawable/dialog_btn_close" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <ImageButton android:id="@id/dialog_cancel" android:background="@drawable/dialog_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/dialog_set" android:background="@drawable/dialog_btn_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/int_pic_bg" android:layout_width="180.0dip" android:layout_height="240.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffdbdddd" android:id="@id/interact_title" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Games" android:layout_alignParentRight="true" android:layout_marginEnd="20.0dip" fontPath="fonts/BlackOpsOne-Regular.ttf" />
+        <ImageView android:id="@id/interact_icon_iv" android:background="@drawable/int_pic_fumo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff37aff4" android:gravity="center_horizontal" android:id="@id/interact_desc_tv" android:layout_width="123.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="EMO will be happy to play games with you." android:layout_below="@id/interact_icon_iv" android:layout_centerHorizontal="true" />
+        <ImageButton android:id="@id/interact_details_ib" android:background="@drawable/int_btn_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

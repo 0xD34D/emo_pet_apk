@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/xiao_ai_image_avatar" android:background="@drawable/setup_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setup_head" />
+        <TextView android:textSize="15.0sp" android:id="@id/xiao_ai_string_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/un_login" fontPath="fonts/Roboto-Bold.ttf" />
+    </LinearLayout>
+</RelativeLayout>

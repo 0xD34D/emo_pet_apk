@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/connect_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/nav_top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/topColor" android:id="@id/searching_emo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searching_emo" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/connect_icon_search" android:background="@drawable/connect_icon_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:layout_toLeftOf="@id/connect_icon_close" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/connect_icon_close" android:background="@drawable/connect_icon_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/search_anim" android:background="@drawable/search_outside" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_background" />
+        <ImageView android:layout_gravity="center" android:id="@id/search_spin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_spin" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/link_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/nav_top_bar">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_color_white" android:id="@id/link_now" android:background="@drawable/link_now_backgroud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:text="@string/link_now" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="25.0sp" android:textColor="@color/text_color_white" android:id="@id/center_text_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="134.0dip" android:layout_above="@id/link_now" android:layout_centerInParent="true" fontPath="fonts/Roboto-Bold.ttf" />
+    </RelativeLayout>
+    <include layout="@layout/include_mask_splash" />
+</RelativeLayout>

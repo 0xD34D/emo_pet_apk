@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/wake_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wake_during_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:src="@drawable/wake_emo" android:layout_alignParentBottom="true" android:layout_marginStart="40.0dip" />
+        <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wake_txt_take" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="50.0dip" />
+    </RelativeLayout>
+    <ImageView android:id="@id/wake_close_iv" android:background="@drawable/wake_btn_back_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" />
+    <RelativeLayout android:id="@id/wake_play_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.8" />
+        <RelativeLayout android:layout_width="317.0dip" android:layout_height="225.0dip" android:layout_centerInParent="true">
+            <ImageView android:background="@drawable/wake_pic_file" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/wake_play_now" android:background="@drawable/wake_btn_playnow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/wake_over_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.8" />
+        <ImageView android:background="@drawable/wake_pic_gameover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/wake_game_over_iv" android:background="@drawable/wake_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/recy_light_container" android:background="@drawable/light_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/recy_light_on" android:background="@drawable/light_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff6be9f5" android:ellipsize="end" android:layout_gravity="center" android:id="@id/recy_light_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="light" android:maxEms="6" android:singleLine="true" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/recy_light_radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageButton android:id="@id/radio_btn_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_marginStart="7.0dip" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/radio_btn_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_marginEnd="7.0dip" />
+    </LinearLayout>
+</LinearLayout>

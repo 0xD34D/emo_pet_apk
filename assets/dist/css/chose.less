@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url("../image/bg_choose_1.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+
+  .box {
+    width: 65%;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+
+    .top-container {
+      width: 100%;
+      height: 85%;
+      .top-box{
+        width: 100%;
+        height:100%;
+      }
+    }
+
+    .bottom-container {
+      width: 100%;
+      height: 15%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      > img {
+        width: 30%;
+        height: 96%;
+      }
+    }
+  }
+
+}
+
+.card{
+  width: 100%;
+  height: 100%;
+  background: url("../image/bg_choose.png") no-repeat;
+  background-size: 100% 100%;
+}
+.card-header{
+  width: 100%;
+  height: 15%;
+  .card-title{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    >img{
+      width: 43%;
+      height: 43%;
+      margin-bottom: 4px;
+      margin-left: 15%;
+    }
+  }
+}
+
+.card-container{
+  width: 100%;
+  height: 85%;
+  display: inline-flex;
+  justify-content: center;
+  .card-body{
+    width: 90%;
+    height: 95%;
+    .card-box{
+      width: 100%;
+      height: 90%;
+      overflow: hidden;
+      >ul{
+        width: 110%;
+        height: 100%;
+        overflow-x: hidden;
+        >li{
+          width: 91%;
+          height: 15%;
+          display: inline-flex;
+          align-items: center;
+          border-bottom: 1px solid #42648C;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}
+li{
+  list-style: none;
+  >div{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #FEFEFE;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    span:nth-child(1){
+      margin-left: 20px;
+    }
+    span:nth-child(2){
+        margin-right: auto;
+    }
+    >img{
+      width: 12%;
+      height: 70%;
+      margin-right: 20px;
+    }
+  }
+}
+.active{
+  background: rgba(40,20,73,.8);
+  border-radius: 5px;
+
+}

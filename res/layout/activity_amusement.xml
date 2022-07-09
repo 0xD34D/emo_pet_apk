@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/amusement_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/game_music_top_container" android:background="@drawable/top_bg_amuse" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <ImageButton android:id="@id/amusement_closed" android:background="@null" android:layout_width="25.0dip" android:layout_height="21.0dip" android:layout_marginLeft="22.0dip" android:src="@drawable/game_icon_return" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/iv_add_music_left" android:background="@null" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="29.0dip" android:layout_height="wrap_content" android:layout_marginLeft="294.0dip" android:src="@drawable/game_icon_music" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/right_music" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginRight="87.0dip" android:layout_alignParentRight="true">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/game_music_top" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0sp" android:textColor="@color/amusement_text_font_color" android:ellipsize="end" android:id="@id/right_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:text="Club Music Music Music Music" android:lines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/amusement_text_font_color" android:id="@id/right_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01:00" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                <com.caesar.musicspectrumbarlibrary.MusicSpectrumBar android:id="@id/right_mb_music" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" app:colorGradient="1" app:gapMultiple="9.0" app:poseType="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/right_add_music" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginRight="87.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/amusement_text_font_color" android:id="@id/tv_add_music_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_add_music" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <ImageButton android:id="@id/iv_add_music_right" android:background="@null" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="29.0dip" android:layout_height="wrap_content" android:layout_marginRight="37.0dip" android:src="@drawable/game_icon_music" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/left_music" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/game_left_music_top" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10.0sp" android:textColor="@color/amusement_text_font_color" android:ellipsize="end" android:id="@id/left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:text="Club Music Music Music Music" android:lines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/amusement_text_font_color" android:id="@id/left_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01:00" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                <com.caesar.musicspectrumbarlibrary.MusicSpectrumBar android:id="@id/left_mb_type2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" app:colorGradient="1" app:gapMultiple="9.0" app:poseType="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/left_add_music" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/amusement_text_font_color" android:id="@id/tv_add_music_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_add_music" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_marginTop="230.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ffe2e2ff" android:id="@id/left_bpm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120.0" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffe2e2ff" android:id="@id/left_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="±0.0%" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ff8e8eae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BPM" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff8e8eae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EDIT" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="230.0dip" android:layout_marginRight="27.0dip" android:layout_alignParentRight="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ffe2e2ff" android:id="@id/right_bpm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120.0" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffe2e2ff" android:id="@id/right_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="±0.0%" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ff8e8eae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BPM" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff8e8eae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EDIT" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rub_dish" android:layout_width="fill_parent" android:layout_height="188.0dip" android:layout_marginTop="61.0dip">
+        <com.jaygoo.widget.VerticalRangeSeekBar android:id="@id/left_seek_bar" android:layout_width="30.0dip" android:layout_height="131.0dip" android:layout_marginLeft="37.0dip" android:layout_centerVertical="true" app:rsb_gravity="center" app:rsb_max="1.2" app:rsb_min="0.8" app:rsb_mode="single" app:rsb_progress_color="#ff9359f7" app:rsb_progress_default_color="#ff1e1e51" app:rsb_progress_height="5.0dip" app:rsb_progress_radius="5.0dip" app:rsb_thumb_drawable="@drawable/thumb" app:rsb_thumb_height="23.0dip" app:rsb_thumb_width="23.0dip" />
+        <com.jaygoo.widget.VerticalRangeSeekBar android:id="@id/set_volume_key" android:layout_width="30.0dip" android:layout_height="131.0dip" android:layout_centerInParent="true" app:rsb_gravity="center" app:rsb_max="100.0" app:rsb_min="0.0" app:rsb_mode="single" app:rsb_progress_color="#ffe75fef" app:rsb_progress_default_color="#ff9359f7" app:rsb_progress_height="5.0dip" app:rsb_progress_radius="5.0dip" app:rsb_thumb_drawable="@drawable/thumb" app:rsb_thumb_height="23.0dip" app:rsb_thumb_width="23.0dip" />
+        <com.jaygoo.widget.VerticalRangeSeekBar android:id="@id/right_seek_bar" android:layout_width="30.0dip" android:layout_height="131.0dip" android:layout_marginRight="37.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="37.0dip" app:rsb_gravity="center" app:rsb_max="1.2" app:rsb_min="0.8" app:rsb_mode="single" app:rsb_progress_color="#ff9359f7" app:rsb_progress_default_color="#ff1e1e51" app:rsb_progress_height="5.0dip" app:rsb_progress_radius="5.0dip" app:rsb_thumb_drawable="@drawable/thumb" app:rsb_thumb_height="23.0dip" app:rsb_thumb_width="23.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip">
+            <ImageView android:id="@id/left_dish" android:background="@null" android:layout_width="188.0dip" android:layout_height="fill_parent" android:src="@drawable/left_dish" />
+            <ImageButton android:id="@id/left_dish_start" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_icon_play" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="90.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/right_dish" android:background="@null" android:layout_width="188.0dip" android:layout_height="fill_parent" android:src="@drawable/right_dish" />
+            <ImageButton android:id="@id/right_dish_start" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_icon_play" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <Button android:id="@id/bt_note1" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note2" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note3" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note4" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note5" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note6" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/bt_note7" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note8" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note9" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note10" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note11" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+            <Button android:id="@id/bt_note12" android:background="@drawable/selector_syllable_bt" android:layout_width="92.0dip" android:layout_height="33.0dip" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

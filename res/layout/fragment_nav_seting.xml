@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="40.0dip" android:paddingEnd="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:layout_marginBottom="4.0dip" android:layout_centerHorizontal="true">
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioGroup android:gravity="left" android:orientation="vertical" android:id="@id/nav_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15.0dip">
+                <RadioButton android:id="@id/setting_wifi_radio" android:background="@drawable/btn_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:checked="true" android:button="@null" />
+                <RadioButton android:id="@id/setting_alexa_radio" android:background="@drawable/btn_alexa" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+                <RadioButton android:id="@id/setting_firmare_radio" android:background="@drawable/btn_firmare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+                <RadioButton android:id="@id/setting_preference_radio" android:background="@drawable/btn_preference" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+                <RadioButton android:id="@id/setting_city_radio" android:background="@drawable/btn_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+                <RadioButton android:id="@id/setting_timezone_radio" android:background="@drawable/btn_timezone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+                <RadioButton android:id="@id/setting_thanks_poweroff" android:background="@drawable/btn_poweroff_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+                <RadioButton android:id="@id/setting_thanks_radio" android:background="@drawable/btn_thanks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+                <RadioButton android:id="@id/setting_volume_radio" android:background="@drawable/btn_volume" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:button="@null" />
+            </RadioGroup>
+        </ScrollView>
+        <FrameLayout android:id="@id/nav_fragment" android:background="@drawable/set_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" />
+    </LinearLayout>
+</RelativeLayout>

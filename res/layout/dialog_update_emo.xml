@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/custom_dialog_layout_design_user_input" android:background="@drawable/dialog_bg_rename" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+    <RelativeLayout android:layout_width="260.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_tips" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ImageButton android:id="@id/dialog_cancel" android:background="@drawable/dialog_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/dialog_set" android:background="@drawable/int_btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

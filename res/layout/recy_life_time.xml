@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/recy_avch_img" android:background="@drawable/achv1_reached" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/recy_notavailablenow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/lifetime_notavailablenow" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/utilities_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_top_bar" />
+    <ImageView android:id="@id/util_back" android:background="@drawable/home_back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <ImageView android:id="@id/util_music" android:background="@drawable/utilities_music" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/util_alert" android:background="@drawable/utilities_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/util_photo" android:background="@drawable/utilities_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="46.0dip">
+            <ImageView android:id="@id/util_weather" android:background="@drawable/utilities_weather" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/util_light" android:background="@drawable/utilities_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/util_more" android:background="@drawable/utilities_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+            <ImageView android:background="@drawable/utilities_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

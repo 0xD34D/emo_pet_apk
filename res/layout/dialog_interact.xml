@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/int_bg_explain" android:layout_width="521.0dip" android:layout_height="282.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog_icon_con" android:layout_width="198.0dip" android:layout_height="fill_parent">
+        <ImageView android:id="@id/dialog_icon" android:background="@drawable/int_pic_egg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="230.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/dialog_icon_con">
+        <TextView android:textSize="14.0sp" android:textColor="#ff00fffc" android:gravity="left" android:id="@id/dialog_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="cdhfsdhfkolsdjlkfjakljdfk\n\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk\ncdhfsdhfkolsdjlkfjakljdfk" android:maxLines="9" android:lineSpacingExtra="3.0dip" android:lineSpacingMultiplier="1.2" />
+        <ImageButton android:id="@id/dialog_ok_button" android:background="@drawable/int_btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

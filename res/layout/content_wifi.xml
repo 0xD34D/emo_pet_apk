@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wifi_box_conf" android:background="@drawable/connect_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wifi_txt_container" android:background="@drawable/connect_pic_txt_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/wifi_txt" android:background="@drawable/connect_txt_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/wifi_user_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/wifi_account_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+            <EditText android:textColor="#ff31e4f9" android:textColorHint="#ff31e4f9" android:id="@id/wifi_ssid" android:background="@drawable/connect_pic_ssid" android:paddingBottom="7.0dip" android:layout_width="210.0dip" android:layout_height="wrap_content" android:hint="SSID" android:singleLine="true" android:maxLength="32" android:inputType="text" android:imeOptions="flagNoExtractUi|flagNoFullscreen" android:paddingStart="35.0dip" />
+            <EditText android:textColor="#ff31e4f9" android:textColorHint="#ff31e4f9" android:id="@id/wifi_password" android:background="@drawable/connect_pic_password" android:paddingBottom="7.0dip" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:hint="PASSWORD" android:singleLine="true" android:maxLength="63" android:inputType="textPassword" android:imeOptions="flagNoExtractUi|flagNoFullscreen" android:paddingStart="35.0dip" />
+            <CheckBox android:textSize="12.0sp" android:textColor="#ffe7b1ed" android:id="@id/wifi_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  save password" android:drawablePadding="0.0dip" android:layout_marginStart="5.0dip" style="@style/checkboxStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/btn_cont" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/wifi_account_container" android:layout_centerHorizontal="true">
+            <ImageButton android:id="@id/wifi_not_now" android:background="@drawable/connect_btn_notnow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageButton android:id="@id/wifi_set" android:background="@drawable/connect_btn_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="30.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ffe7b1ed" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="5G  networks are not supported" android:singleLine="true" android:layout_below="@id/btn_cont" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/wifi_anim_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip">
+        <ImageView android:id="@id/wifi_anim" android:background="@drawable/connect_find_found" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

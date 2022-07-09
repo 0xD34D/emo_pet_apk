@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/pop_photo_image" android:layout_width="270.0dip" android:layout_height="202.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:id="@id/pop_photo_delete" android:background="@drawable/photo_icon_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15.0dip" />
+            <ImageView android:id="@id/pop_photo_download" android:background="@drawable/photo_icon_download" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

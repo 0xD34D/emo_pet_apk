@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/custom_dialog_layout_design_user_input" android:background="@drawable/photo_bg_photo_popup" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo_sync_title" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="260.0dip" android:layout_height="75.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffe8b1ef" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photo_sync_message" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ImageButton android:id="@id/photo_sync_cancel" android:background="@drawable/photo_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/photo_sync_start" android:background="@drawable/photo_btn_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

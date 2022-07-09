@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select music</title>
+    <link rel="stylesheet" href="./css/chose.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <div class="top-container">
+            <div class="top-box">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <img src="./image/txt_choose.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-body">
+                            <div class="card-box">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <img src="./image/btn_ok.png" onclick="selectMusic()">
+        </div>
+    </div>
+</div>
+
+<script src="./js/config.js"></script>
+<script>
+   let extent = {
+       easy:"./image/pic_easy.png",
+       nomal:"./image/pic_nomal.png",
+       hard:"./image/pic_hard.png",
+   };
+    let music =[
+        {name:'Click',map:"click_emo_edit",writer:'Revolt',bpm:120,extent:'easy'},
+        {name:'TIME OF MY LIFE',map:"time_of_my_life",writer:'Revolt',bpm:120,extent:'nomal'},
+        {name:'Can I Take You There',map:"can_i_take_you_there",writer:'Revolt',bpm:120,extent:'nomal'},
+        {name:'Flashback',map:"flashback_emo_edit",writer:'Revolt',bpm:120,extent:'nomal'},
+        {name:'Rollercoaster',map:"rollercoaster_emo_edit",writer:'Revolt',bpm:120,extent:'hard'},
+    ];
+
+    window.onload=function () {
+        ;(function () {
+            let ul = document.querySelector("ul");
+            let str =  music.map((v,k)=>{
+                let active = k==0?"active":"";
+                let img = extent[v.extent];
+                return `<li><div class="${active}" data-writer="${v.writer}" data-name="${v.name}" data-bpm="${v.bpm}" data-map="${v.map}" data-extent="${v.extent}"  onclick="getData(this)"><span>${k+1}.</span>&nbsp;<span>${v.name}</span> <span style="font-size: 18px;margin-right: 25px">${v.writer}</span><img src="${img}" alt=""></div></li>`
+            }).join(" ")
+            str+= `<li style="color: #fff;align-items: center;justify-content: center;height: 10%;border-bottom: none;"><b style="font-size: 12px;">All music is clipped version.</b></li>`
+            ul.innerHTML = str
+        })()
+    }
+
+
+
+    function getData(obj) {
+        document.querySelector(".active").classList.remove("active")
+        obj.classList.add("active")
+    }
+
+    function selectMusic() {
+        let info = document.querySelector(".active");
+        let name= info.getAttribute("data-name");
+        let writer= info.getAttribute("data-writer");
+        let bpm= info.getAttribute("data-bpm");
+        let extent= info.getAttribute("data-extent");
+        let map= info.getAttribute("data-map");
+        location.href = `./index.html?beatmap=${map}&bpm=${bpm}&extent=${extent}&name=${name}&writer=${writer}`
+        config.startGame();
+    }
+
+</script>
+</div>
+</body>
+</html>

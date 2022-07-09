@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.bingoogolapple.badgeview.BGABadgeRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="10.0dip" app:badge_bgColor="#ffff2a2a" app:badge_gravity="rightTop" app:badge_horizontalMargin="0.0dip" app:badge_verticalMargin="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/recy_round" android:background="@drawable/notice_round" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="11.299988dip" android:layout_marginStart="5.5dip" />
+    <View android:id="@id/recy_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" />
+    <View android:id="@id/recy_noti_dot" android:background="@drawable/notice_dot" android:layout_width="2.0dip" android:layout_height="2.0dip" android:layout_marginTop="13.0dip" android:layout_marginStart="7.5dip" />
+    <View android:id="@id/recy_noti_dot_round" android:background="@drawable/notice_dot_round" android:layout_width="3.0dip" android:layout_height="3.0dip" android:layout_marginTop="12.5dip" android:layout_marginStart="7.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/recy_badgeView_new" android:background="@drawable/noti_item_bg_n" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_toRightOf="@id/recy_line" android:paddingStart="4.0dip" android:layout_marginStart="8.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/recy_noti_title" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="shows your tags for this particular content zone" android:maxEms="10" android:singleLine="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff8157f2" android:ellipsize="end" android:id="@id/recy_noti_sub_title" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Carter saw Baldwin County on my name tag that day and stopped to" android:maxEms="10" android:singleLine="true" />
+    </LinearLayout>
+</cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>

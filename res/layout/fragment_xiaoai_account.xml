@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_xiaoai_first" layout="@layout/include_setting_header" />
+    <include android:id="@id/include_xiaoai_avatar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" layout="@layout/include_xiao_ai_header" />
+    <Button android:textColor="@color/text_color_white" android:gravity="center_horizontal" android:background="@drawable/home_train_button_preservation_mi" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/login_xiao_mi_accout" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

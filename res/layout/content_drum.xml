@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/drum_web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/drum_back" android:background="@drawable/drum_btn_back_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="10.0dip" />
+</RelativeLayout>

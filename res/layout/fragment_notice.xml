@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="700.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+            <RadioGroup android:id="@id/nf_Radio_box" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <cn.bingoogolapple.badgeview.BGABadgeRadioButton android:id="@id/nf_notices" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableStart="@drawable/noti_notices" app:badge_bgColor="#ffff2a2a" />
+                <cn.bingoogolapple.badgeview.BGABadgeRadioButton android:id="@id/nf_updates" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableStart="@drawable/noti_updates" app:badge_bgColor="#ffff2a2a" />
+                <cn.bingoogolapple.badgeview.BGABadgeRadioButton android:id="@id/nf_events" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableStart="@drawable/noti_events" />
+                <cn.bingoogolapple.badgeview.BGABadgeRadioButton android:id="@id/nf_recommends" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableStart="@drawable/noti_recommends" app:badge_bgColor="#ffff2a2a" />
+            </RadioGroup>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="140.0dip" android:layout_height="275.0dip">
+            <View android:background="#ff4232a7" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recy_article_title" android:layout_width="140.0dip" android:layout_height="275.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/noti_web_box" android:background="@drawable/noti_content_bg" android:layout_width="fill_parent" android:layout_height="285.0dip" android:layout_marginStart="5.0dip">
+            <WebView android:id="@id/web_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:overScrollMode="never" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

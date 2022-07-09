@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/custom_dialog_layout_design_user_input" android:background="@drawable/dialog_bg_rename" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <TextView android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tips" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffe7aeed" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emo_ary_sure" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <ImageButton android:id="@id/dialog_continue_off" android:background="@drawable/btn_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

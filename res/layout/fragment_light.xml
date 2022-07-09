@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tool_box" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="587.0dip" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="150.0dip" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/light_refresh" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_light_refresh" />
+            <ImageButton android:id="@id/light_unbind_all" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/selector_light_unbind_all" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_light_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

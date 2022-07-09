@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/ll_bga_adapter_empty_view_root" android:padding="@dimen/size_level4" android:clickable="true" style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bga_adapter_empty_view_icon" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/bga_adapter_empty_view_icon_size" android:layout_height="@dimen/bga_adapter_empty_view_icon_size" android:layout_marginBottom="@dimen/bga_adapter_empty_view_space" />
+    <TextView android:textSize="@dimen/bga_adapter_empty_view_msg_textSize" android:textColor="@color/bga_adapter_empty_view_msg_textColor" android:gravity="center" android:id="@id/tv_bga_adapter_empty_view_msg" android:padding="@dimen/size_level2" android:visibility="gone" android:clickable="true" style="@style/WrapWrap" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="450.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/shape_preference_bg" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="20.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/text_color_white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Volume" />
+                    <com.jaygoo.widget.RangeSeekBar android:id="@id/preference_set_volume" android:layout_width="400.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498" app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.37" app:rsb_gravity="bottom" app:rsb_max="3.0" app:rsb_mode="single" app:rsb_progress_color="#ff8288ff" app:rsb_progress_default_color="#fff7f7f7" app:rsb_progress_height="5.0dip" app:rsb_step_auto_bonding="true" app:rsb_step_color="#ff8288ff" app:rsb_step_height="10.0dip" app:rsb_step_radius="5.0dip" app:rsb_step_width="5.0dip" app:rsb_steps="3" app:rsb_thumb_drawable="@drawable/icon_volume_s" app:rsb_thumb_scale_ratio="1.2" app:rsb_tick_mark_in_range_text_color="#ff8288ff" app:rsb_tick_mark_layout_gravity="bottom" app:rsb_tick_mark_mode="other" app:rsb_tick_mark_text_array="@array/wordsArray" app:rsb_tick_mark_text_color="@color/text_color_white" app:rsb_tick_mark_text_margin="20.0dip" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:background="@drawable/shape_preference_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="Temperature" />
+                            <RadioGroup android:id="@id/preference_set_temperature" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_set_temperature_celsius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="Celsius" android:paddingStart="10.0dip" />
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_set_temperature_fahrenheit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="Fahrenheit" android:paddingStart="10.0dip" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:background="@drawable/shape_preference_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="Length" />
+                            <RadioGroup android:id="@id/preference_set_length" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_set_length_metric" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="Metric" android:paddingStart="10.0dip" />
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_set_length_imperial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="Imperial" android:paddingStart="10.0dip" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:background="@drawable/shape_preference_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="Auto Update" />
+                            <RadioGroup android:id="@id/preference_set_update" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_set_update_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="ON" android:paddingStart="10.0dip" />
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_set_update_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="OFF" android:paddingStart="10.0dip" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip">
+                    <LinearLayout android:background="@drawable/shape_preference_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="Schedule Sound" />
+                            <RadioGroup android:id="@id/preference_schedule_sound" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_schedule_sound_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="ON" android:paddingStart="10.0dip" />
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:id="@id/preference_schedule_sound_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="OFF" android:paddingStart="10.0dip" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:background="@drawable/shape_preference_bg" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="Length" />
+                            <RadioGroup android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="Metric" android:paddingStart="10.0dip" />
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="Imperial" android:paddingStart="10.0dip" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:background="@drawable/shape_preference_bg" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/text_color_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:text="Auto Update" />
+                            <RadioGroup android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="ON" android:paddingStart="10.0dip" />
+                                <RadioButton android:textSize="13.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radio_button_style" android:text="OFF" android:paddingStart="10.0dip" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

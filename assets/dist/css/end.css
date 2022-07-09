@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url("../image/bg_over_1.png");
+  background-size: 100% 100%;
+}
+.main .left-emo {
+  position: absolute;
+  height: 100vh;
+  width: auto;
+  z-index: 3;
+}
+.main .left-emo img {
+  height: 100%;
+}
+.main .right-score {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main .right-score .score-bg-over {
+  height: 74vh;
+  width: 70vw;
+  margin-right: 4%;
+  background: url(../image/bg_gameover.png);
+  background-size: 100% 100%;
+  margin-top: 4%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.main .right-score .score-bg-over .score-star-cont {
+  width: 40vw;
+  height: 28vh;
+  margin-top: -15vh;
+  display: flex;
+}
+.main .right-score .score-bg-over .score-star-cont div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 1.5vw;
+  align-items: center;
+}
+.main .right-score .score-bg-over .score-star-cont div:nth-child(1) {
+  width: 11vw;
+}
+.main .right-score .score-bg-over .score-star-cont div:nth-child(2) {
+  width: 13vw;
+}
+.main .right-score .score-bg-over .score-star-cont div:nth-child(3) {
+  width: 16vw;
+}
+.main .right-score .score-bg-over .score-star-cont div > img {
+  max-width: 100%;
+}
+.main .right-score .score-bg-over .score-star-cont div p {
+  font-size: 12px;
+  padding-bottom: 3px;
+  color: #B2838E;
+  font-weight: bold;
+}
+.main .right-score .score-bg-over .score-other-data {
+  margin-top: 13vh;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+}
+.main .right-score .score-bg-over .score-other-data .score-bg {
+  width: 47vw;
+  height: 14vh;
+  align-self: flex-end;
+  margin-right: 2.5vw;
+  background: url(../image/pic_num_bg.png);
+  background-size: 100% 100%;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main .right-score .score-bg-over .score-other-data .score-bg p {
+  height: 60%;
+  font-size: 20px;
+  color: #1E467C;
+  margin-right: 1vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-bg div {
+  height: 60%;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 2.5vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-bg div img {
+  height: 70%;
+  margin-right: -0.5vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-combo {
+  margin-top: 1vh;
+  align-self: flex-end;
+  margin-right: 5vw;
+  height: 6vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.main .right-score .score-bg-over .score-other-data .score-combo img {
+  height: 100%;
+}
+.main .right-score .score-bg-over .score-other-data .score-combo img:nth-child(2) {
+  margin-left: 0.5vw;
+  margin-right: -0.6vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-combo img:nth-child(3) {
+  margin-right: -0.6vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-combo img:nth-child(4) {
+  margin-right: -0.6vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-combo img:nth-child(5) {
+  margin-right: -0.6vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-text {
+  margin-top: 3vh;
+  display: flex;
+  height: 6vh;
+  align-self: flex-end;
+  align-items: center;
+  margin-right: 6vw;
+}
+.main .right-score .score-bg-over .score-other-data .score-text div {
+  color: #071932;
+  font-size: 16px;
+}
+.main .right-score .score-bg-over .score-other-data .score-text .score-text-img {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  height: 6vh;
+}
+.main .right-score .score-bg-over .score-other-data .score-text .score-text-img img {
+  margin-right: 1vw;
+  height: 100%;
+}
+.main .right-score .score-bg-over .score-other-data .score-btn {
+  position: absolute;
+  bottom: 8vh;
+  height: 12vh;
+  width: 18vw;
+  align-self: flex-end;
+  margin-bottom: -14vh;
+}
+.main .right-score .score-bg-over .score-other-data .score-btn button {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: url("../image/btn_back.png");
+  background-size: 100% 100%;
+}
+/*# sourceMappingURL=end.css.map */

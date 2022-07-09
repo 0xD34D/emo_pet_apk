@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/setup_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/setup_toubu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:background="@drawable/setup_toubu_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/setup_head_back" android:background="#ffffffff" android:layout_width="70.0dip" android:layout_height="47.0dip" android:alpha="0.0" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="23.0dip" android:layout_marginBottom="25.0dip">
+        <RadioGroup android:orientation="vertical" android:id="@id/rg_setting_left" android:background="@drawable/shape_setup_left_bg" android:layout_width="150.0dip" android:layout_height="fill_parent">
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/bt_internet_connection" android:background="@drawable/bt_setting_left" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:checked="true" android:button="@null" android:text="@string/internet_connection" android:stateListAnimator="@null" fontPath="fonts/Roboto-Bold.ttf" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/bt_xiao_ai" android:background="@drawable/bt_setting_left" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/xiao_ai" android:stateListAnimator="@null" fontPath="fonts/Roboto-Bold.ttf" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/bt_firmware_upgrade" android:background="@drawable/bt_setting_left" android:layout_width="fill_parent" android:layout_height="44.0dip" android:button="@null" android:text="@string/firmware_upgrade" android:stateListAnimator="@null" fontPath="fonts/Roboto-Bold.ttf" />
+        </RadioGroup>
+        <RelativeLayout android:id="@id/fm_container" android:background="@drawable/shape_setup_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:elevation="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

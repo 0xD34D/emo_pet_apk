@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="28.0dip">
+        <ImageView android:id="@id/top_txt_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="96.0dip" />
+        <ImageView android:id="@id/home_set_iv" android:background="@null" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_set" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginEnd="18.0dip" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/home_music_iv" android:background="@drawable/home_music_on" android:layout_width="13.0dip" android:layout_height="17.0dip" android:layout_centerVertical="true" android:layout_marginEnd="58.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:textColor="#ffc1edff" android:ellipsize="end" android:id="@id/home_music_text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:maxEms="15" android:layout_centerVertical="true" android:layout_marginEnd="100.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color_white" android:id="@id/firmware_latest_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EMO Latest version : kkkjffjf" android:layout_above="@id/current_version" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color_white" android:id="@id/current_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/firmware_update_ib" android:background="@drawable/btn_updatefirmware" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

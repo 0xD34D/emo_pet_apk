@@ -1,0 +1,1 @@
+window.imageConfig={generatedImage(e,a,g){window.TellNative.generatedImage(e,a,g)},resetImage(){window.TellNative.resetImage()}};

@@ -1,0 +1,65 @@
+.class public Lcom/living/emo/blebean/parse/BleTimezoneResponseParse;
+.super Ljava/lang/Object;
+.source "BleTimezoneResponseParse.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/living/emo/blebean/parse/BleTimezoneResponseParse$Callback;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static timezone(Ljava/lang/String;Lcom/living/emo/blebean/parse/BleTimezoneResponseParse$Callback;)V
+    .locals 1
+
+    .line 7
+    invoke-static {p0}, Lcom/living/emo/blebean/response/TimeZoneResponse;->objectFromData(Ljava/lang/String;)Lcom/living/emo/blebean/response/TimeZoneResponse;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    .line 8
+    invoke-virtual {p0}, Lcom/living/emo/blebean/response/TimeZoneResponse;->getData()Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/living/emo/blebean/response/TimeZoneResponse;->getData()Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean;->getTimezone()Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean$TimezoneBean;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 9
+    invoke-virtual {p0}, Lcom/living/emo/blebean/response/TimeZoneResponse;->getData()Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean;->getTimezone()Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean$TimezoneBean;
+
+    move-result-object p0
+
+    .line 10
+    invoke-interface {p1, p0}, Lcom/living/emo/blebean/parse/BleTimezoneResponseParse$Callback;->response(Lcom/living/emo/blebean/response/TimeZoneResponse$DataBean$TimezoneBean;)V
+
+    :cond_0
+    return-void
+.end method

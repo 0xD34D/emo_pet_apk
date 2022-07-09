@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/hunt_tran_80_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/hunt_bg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.opensource.svgaplayer.SVGAImageView android:layout_width="240.0dip" android:layout_height="240.0dip" android:layout_centerInParent="true" app:autoPlay="true" app:source="game_interface.svga" />
+    <ImageView android:id="@id/hunt_dialog_core" android:background="@drawable/hunt_cube" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/hunt_dialog_txt" android:background="@drawable/hunt_word_diamonds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_above="@id/hunt_dialog_core" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/hunt_dialog_btn_ready" android:background="@drawable/hunt_btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_below="@id/hunt_dialog_core" android:layout_centerHorizontal="true" />
+</RelativeLayout>

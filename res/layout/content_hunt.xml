@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/hunt_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/hunt_music" android:background="@drawable/hunt_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:src="@null" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/hunt_back" android:background="@drawable/hunt_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="132.0dip" android:layout_height="72.0dip" android:layout_marginEnd="36.0dip" android:layout_alignParentEnd="true">
+        <TextView android:textSize="25.0sp" android:textColor="@color/text_color_white" android:id="@id/hunt_cunt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/hunt_bg_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="34.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="41.0dip" />
+    <ImageView android:background="@drawable/hunt_bg_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" android:layout_alignParentBottom="true" android:layout_marginEnd="30.0dip" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:background="@drawable/hunt_search_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_above="@id/hunt_direction" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/hunt_search_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/hunt_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:background="@drawable/hunt_search_bg_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/hunt_direction" android:layout_width="129.0dip" android:layout_height="79.0dip" android:layout_marginBottom="27.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/hunt_direction_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+        <ImageView android:background="@drawable/hunt_direction_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:rotation="180.0" />
+        <ImageView android:background="@drawable/hunt_direction_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_centerHorizontal="true" android:rotation="270.0" />
+        <ImageView android:id="@id/hunt_lay_flat" android:background="@drawable/selector_hunt_stop_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+        <ImageView android:id="@id/hunt_left_small_pour" android:background="@drawable/selector_hunt_left_small_pour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/hunt_lay_flat" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="4.0dip" />
+        <ImageView android:id="@id/hunt_right_small_pour" android:background="@drawable/selector_hunt_right_small_pour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/hunt_lay_flat" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginEnd="4.0dip" />
+        <ImageView android:id="@id/hunt_up_small_pour" android:background="@drawable/selector_hunt_up_small_pour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_above="@id/hunt_lay_flat" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/hunt_rest" android:background="@drawable/hunt_btn_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="150.0dip" android:layout_alignParentBottom="true" android:layout_marginEnd="70.0dip" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:id="@id/hunt_other_con" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

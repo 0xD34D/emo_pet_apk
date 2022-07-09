@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/hunt_search_2_4" />
+    <item android:duration="200" android:drawable="@drawable/hunt_search_2_3" />
+    <item android:duration="200" android:drawable="@drawable/hunt_search_2_2" />
+    <item android:duration="200" android:drawable="@drawable/hunt_search_2_1" />
+</animation-list>

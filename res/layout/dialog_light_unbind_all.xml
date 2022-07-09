@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/custom_dialog_layout_design_user_input" android:background="@drawable/photo_bg_photo_popup" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Unbind All" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="290.0dip" android:layout_height="75.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffe8b1ef" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EMO will unbind all smartlights and reboot" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ImageButton android:id="@id/dialog_light_ok" android:background="@drawable/photo_btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+        <ImageButton android:id="@id/dialog_light_cancel" android:background="@drawable/photo_btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

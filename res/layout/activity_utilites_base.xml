@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_back_rel" android:background="@drawable/utilities_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_util" layout="@layout/include_top_bar" />
+    <ImageView android:id="@id/utilities_back" android:background="@drawable/home_back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/util_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_util" />
+</RelativeLayout>
